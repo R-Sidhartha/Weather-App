@@ -1,0 +1,47 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+
+body {
+        background-image: url('image/weatherbg.jpg');
+        background-size: cover; /* Adjust as needed */
+        background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    
+}
+h3{
+    font-weight: bold;
+}
+#future-weather {
+    display: none;
+  }
+  
+.forecast{
+    background-color: rgb(103, 162, 250);
+    color: black;
+    font-size: 0.9em;
+}
+span{
+    font-size: 1em;
+}
+li:hover{
+    background-color: lightslategray;
+    text-decoration: underline;
+}
+@media screen and (max-width:450px) {
+    .forecast{
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:500px) {
+    .future-weather{
+        width: 62vw;
+    }
+    .forecast{
+        font-size: 0.6rem;
+    }
+    }
